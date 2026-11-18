@@ -1030,8 +1030,8 @@ h2 {
 
 .approach-details {
   display: grid;
-  grid-template-columns: 0.95fr 1.05fr;
-  gap: 58px;
+  grid-template-columns: 1fr;
+  gap: 64px;
   margin-top: 76px;
 }
 
