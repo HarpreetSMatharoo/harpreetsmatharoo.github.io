@@ -1653,7 +1653,7 @@ h2 {
 
 .work-card:hover {
   box-shadow: 9px 9px 0 var(--ink);
-  transform: translateY(-5px) rotate(0);
+  transform: translateY(-5px) rotate(0.4deg);
 }
 
 .card-teal {
@@ -1718,10 +1718,30 @@ h2 {
   letter-spacing: -0.02em;
 }
 
+.case-title-link {
+  color: inherit;
+  text-decoration-color: transparent;
+  text-decoration-line: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.12em;
+  transition: text-decoration-color 160ms ease;
+}
+
+.case-title-link:hover,
+.case-title-link:focus-visible {
+  text-decoration-color: currentColor;
+}
+
+.case-title-link span {
+  color: var(--accent);
+  font-size: 0.55em;
+  vertical-align: 0.12em;
+}
+
 .contact-card:hover {
   border-color: var(--ink);
   box-shadow: 7px 7px 0 var(--ink);
-  transform: translate(-2px, -2px);
+  transform: translate(-2px, -2px) rotate(-0.4deg);
 }
 
 .approach-section {
@@ -1859,6 +1879,17 @@ h2 {
 .site-footer {
   min-height: 90px;
   border-top: 4px solid var(--ink);
+}
+
+.study-card,
+.workflow-card,
+.skill-group,
+.credential-group,
+.bring-item,
+.hero-note,
+.hero-portrait,
+.about-portrait-frame {
+  transition: transform 180ms ease, box-shadow 180ms ease;
 }
 
 .footer-wordmark .wordmark-mark {
@@ -2181,5 +2212,57 @@ h2 {
   *::before,
   *::after {
     transition-duration: 0.01ms !important;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .study-card:hover {
+    transform: translateY(-4px) rotate(0.5deg);
+    box-shadow: 7px 7px 0 var(--ink);
+  }
+
+  .workflow-card:hover {
+    transform: translateY(-3px) rotate(0.6deg);
+    box-shadow: 7px 7px 0 var(--ink);
+  }
+
+  .skill-group:hover,
+  .credential-group:hover {
+    transform: translateY(-3px) rotate(-0.4deg);
+    box-shadow: 7px 7px 0 var(--ink);
+  }
+
+  .bring-item:hover {
+    transform: translateY(-2px) rotate(-0.3deg);
+  }
+
+  .hero-note:hover {
+    transform: translateY(-2px) rotate(-1.2deg);
+    box-shadow: 6px 6px 0 var(--ink);
+  }
+
+  .hero-portrait:hover {
+    transform: translateY(-3px) rotate(2deg);
+    box-shadow: 12px 12px 0 var(--ink);
+  }
+
+  .about-portrait-frame:hover {
+    transform: translateY(-2px) rotate(-0.6deg);
+    box-shadow: 10px 10px 0 var(--ink);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .work-card:hover,
+  .study-card:hover,
+  .contact-card:hover,
+  .workflow-card:hover,
+  .skill-group:hover,
+  .credential-group:hover,
+  .bring-item:hover,
+  .hero-note:hover,
+  .hero-portrait:hover,
+  .about-portrait-frame:hover {
+    transform: none;
   }
 }
