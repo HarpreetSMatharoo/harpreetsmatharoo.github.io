@@ -2489,14 +2489,6 @@ h2 {
   font-weight: 700;
 }
 
-.project-panel-role .project-list li em {
-  display: block;
-  margin-top: 4px;
-  color: var(--muted);
-  font-size: 13px;
-  font-weight: 400;
-}
-
 .project-measurement {
   margin-top: 54px;
   padding: clamp(24px, 4vw, 38px);
