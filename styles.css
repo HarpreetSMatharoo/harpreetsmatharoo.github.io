@@ -690,27 +690,6 @@ h2 {
   font-size: 12px;
 }
 
-.draft-note {
-  display: flex;
-  gap: 9px;
-  align-items: center;
-  margin: 18px 0 0;
-  color: var(--muted);
-  font-size: 12px;
-}
-
-.draft-note span {
-  width: 17px;
-  height: 17px;
-  display: grid;
-  place-items: center;
-  border: 1px solid var(--coral-strong);
-  border-radius: 50%;
-  color: var(--accent-warm);
-  font-family: var(--mono);
-  font-size: 12px;
-}
-
 .all-work-link {
   margin-top: 28px;
 }
@@ -2542,44 +2521,24 @@ h2 {
   margin: 48px auto 0;
 }
 
-.project-cta {
-  margin-top: 72px;
-  padding: clamp(28px, 5vw, 54px);
-  border: 4px solid var(--ink);
-  background: var(--coral);
-  box-shadow: 9px 9px 0 var(--ink);
-}
-
-.project-cta h2 {
-  max-width: 780px;
-  margin: 0 0 14px;
-  font-size: clamp(34px, 5vw, 62px);
-  line-height: 0.98;
-}
-
-.project-cta > p:not(.project-overline):not(.project-access-note) {
-  max-width: 65ch;
-  margin: 0 0 24px;
-  color: var(--ink);
-  font-size: 17px;
-  line-height: 1.65;
-}
-
-.project-cta .button {
-  width: fit-content;
-}
-
-.project-cta .project-access-note {
-  margin: 18px 0 0;
+.project-contact-note {
+  margin: 48px 0 0;
   color: var(--muted);
-  font-size: 12px;
+  font-size: 13px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.project-contact-note a {
+  color: var(--ink);
+  font-weight: 700;
+  text-underline-offset: 0.18em;
 }
 
 .project-header,
 .project-panel,
 .project-measurement,
 .project-metrics li,
-.project-cta,
 .project-hero-visual,
 .project-secondary-visual {
   transition: transform 180ms ease, box-shadow 180ms ease;
@@ -2609,11 +2568,6 @@ h2 {
   .project-metrics li:hover {
     transform: translateY(-2px) rotate(-0.3deg);
     box-shadow: 4px 4px 0 var(--ink);
-  }
-
-  .project-cta:hover {
-    transform: translateY(-2px) rotate(0.15deg);
-    box-shadow: 11px 11px 0 var(--ink);
   }
 
   .project-hero-visual:hover,
@@ -2700,13 +2654,6 @@ h2 {
     grid-template-columns: 1fr;
   }
 
-  .project-cta {
-    margin-top: 54px;
-  }
-
-  .project-cta .button {
-    width: 100%;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -2715,7 +2662,6 @@ h2 {
   .project-panel:hover,
   .project-measurement:hover,
   .project-metrics li:hover,
-  .project-cta:hover,
   .project-hero-visual:hover,
   .project-secondary-visual:hover {
     transform: none;
