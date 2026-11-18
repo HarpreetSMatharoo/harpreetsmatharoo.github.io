@@ -994,7 +994,7 @@ h2 {
 
 .workflow-card h4,
 .bring-item h4,
-.skill-group h4 {
+.skill-group h5 {
   margin: 19px 0 8px;
   font-family: var(--display);
   font-size: 20px;
@@ -1083,14 +1083,25 @@ h2 {
   gap: 10px;
 }
 
+.skills-category + .skills-category {
+  margin-top: 30px;
+}
+
+.skills-category-title {
+  margin: 0 0 13px;
+  color: var(--ink);
+  font-family: var(--display);
+  font-size: 19px;
+  font-weight: 600;
+}
+
 .skill-group {
-  min-height: 124px;
   padding: 17px;
   border: 1px solid #d3ddd5;
   background: #fffefa;
 }
 
-.skill-group h4 {
+.skill-group h5 {
   margin: 0 0 9px;
   font-size: 18px;
 }
