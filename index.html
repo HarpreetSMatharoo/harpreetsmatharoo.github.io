@@ -7,7 +7,7 @@
       name="description"
       content="Harpreet Singh Matharoo is an AI Product Manager focused on customer experience, cloud support, identity, and secure AI products."
     >
-    <meta name="theme-color" content="#f3f6f8">
+    <meta name="theme-color" content="#f9f3e7">
     <title>Harpreet Singh Matharoo — AI Product Manager</title>
     <link rel="stylesheet" href="styles.css">
   </head>
@@ -20,11 +20,18 @@
         <span>Harpreet Singh Matharoo</span>
       </a>
       <nav class="site-nav" aria-label="Main navigation">
-        <a href="index.html" aria-current="page">Home</a>
-        <a href="#about">About</a>
-        <a href="experience.html">Experience</a>
-        <a href="case-studies.html">Case studies</a>
-        <a href="contact.html">Contact</a>
+        <details class="nav-menu">
+          <summary aria-label="Toggle main navigation">
+            <span class="menu-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+          </summary>
+          <div class="nav-panel">
+            <a href="index.html" aria-current="page">Home</a>
+            <a href="#about">About</a>
+            <a href="experience.html">Experience</a>
+            <a href="case-studies.html">Case studies</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </details>
       </nav>
     </header>
 
@@ -37,11 +44,11 @@
             <span>Identity &amp; security</span>
             <span>Customer experience</span>
           </div>
-          <h1 id="hero-title">AI products for complex, <em>high-trust work.</em></h1>
+          <h1 id="hero-title"><span>Harpreet</span><span>Singh</span><em>Matharoo</em></h1>
+          <p class="hero-role">AI Product Manager <span>·</span> Identity <span>·</span> Trustworthy AI</p>
           <p class="hero-summary">
-            I’m Harpreet, an AI Product Manager with a forward-deployed perspective:
-            turning customer and support challenges into secure products and useful
-            agent experiences.
+            I turn customer and support challenges into secure products and useful
+            agent experiences—grounded in evidence and built for real-world work.
           </p>
           <div class="hero-actions">
             <a class="button button-dark" href="experience.html">Review my experience <span aria-hidden="true">↗</span></a>
@@ -65,7 +72,6 @@
             <strong>From insight to launch</strong>
           </div>
         </div>
-        <div class="hero-index" aria-hidden="true">01 / 05</div>
       </section>
 
       <section class="signal-strip" aria-label="Professional focus">
