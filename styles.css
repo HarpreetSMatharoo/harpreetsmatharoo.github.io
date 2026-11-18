@@ -1053,11 +1053,24 @@ h2 {
   background: var(--surface);
 }
 
+.about-section .section-heading {
+  grid-template-columns: 1fr;
+}
+
 .about-grid {
   display: grid;
   grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr);
   align-items: start;
   gap: 50px;
+}
+
+.about-profile {
+  min-width: 0;
+}
+
+.about-intro {
+  max-width: none;
+  margin: 24px 0 0;
 }
 
 .about-portrait-frame {
@@ -2474,6 +2487,14 @@ h2 {
 .project-list li::marker {
   color: var(--accent-warm);
   font-weight: 700;
+}
+
+.project-panel-role .project-list li em {
+  display: block;
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 400;
 }
 
 .project-measurement {
